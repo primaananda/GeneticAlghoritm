@@ -59,6 +59,8 @@ public class Tour {
             for (int cityIndeks = 0; cityIndeks < tourSize(); cityIndeks++) {
                 NodeCity city = getCity(cityIndeks);
                 NodeCity desNodeCity;
+                
+                
             }
         }
     }
