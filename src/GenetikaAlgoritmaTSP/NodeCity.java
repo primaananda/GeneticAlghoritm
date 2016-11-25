@@ -13,17 +13,8 @@ package GenetikaAlgoritmaTSP;
 public class NodeCity {
     private int nodex;
     private int nodey;
-    private String nama;
+    String nama;
 
-//    public NodeCity() {
-//        this.nodex = (int)(Math.random()*200);
-//        this.nodey = (int)(Math.random()*200);
-//    }
-//    
-//    public NodeCity(int x, int y) {
-//        this.nodex = x;
-//        this.nodey = y;
-//    }
 
     public NodeCity(String nama, int x, int y) {
         this.nama = nama;
