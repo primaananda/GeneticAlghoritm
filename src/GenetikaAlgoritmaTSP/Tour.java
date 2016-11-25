@@ -88,35 +88,35 @@ public class Tour {
                     if (destinationCity.nama.equals("B")) {
                         travelingTime += (3600*4/40);
                         sourceCity = getCity(cityIndeks);
-//                        start2 = cityIndeks;
-//                        break;
+                        start2 = cityIndeks;
+                        break;
                     } else if (destinationCity.nama.equals("D")) {
                         travelingTime += (3600*16/40);
                         sourceCity = getCity(cityIndeks);
-//                        start2 = cityIndeks;
-//                        break;
+                        start2 = cityIndeks;
+                        break;
                     } else {
                         travelingTime += 0;
-//                        start2 = cityIndeks;
-//                        break;
+                        start2 = cityIndeks;
+                        break;
                     }
                     start2 = cityIndeks;
                 } else if (sourceCity.nama.equals("B")) {
                     if (destinationCity.nama.equals("A")) {
                         travelingTime += (3600*4/40);
                         sourceCity = getCity(cityIndeks);
-//                        start2 = cityIndeks;
-//                        break;
+                        start2 = cityIndeks;
+                        break;
                     } else if (destinationCity.nama.equals("C")) {
                         travelingTime += (3600*4/80);
                         sourceCity = getCity(cityIndeks);
-//                        start2 = cityIndeks;
-//                        break;
+                        start2 = cityIndeks;
+                        break;
                     } else if (destinationCity.nama.equals("E")) {
                         travelingTime += (3600*15/60);
                         sourceCity = getCity(cityIndeks);
-//                        start2 = cityIndeks;
-//                        break;
+                        start2 = cityIndeks;
+                        break;
                     } else {
                         travelingTime += 0;
                     }
@@ -125,17 +125,17 @@ public class Tour {
                     if (destinationCity.nama.equals("B")) {
                         travelingTime += (3600*4/40);
                         sourceCity = getCity(cityIndeks);
-//                        start2 = cityIndeks;
-//                        break;
+                        start2 = cityIndeks;
+                        break;
                     } else if (destinationCity.nama.equals("F")) {
                         travelingTime += (3600*12/40);
                         sourceCity = getCity(cityIndeks);
-//                        start2 = cityIndeks;
-//                        break;
+                        start2 = cityIndeks;
+                        break;
                     } else {
                         travelingTime += 0;
-//                        start2 = cityIndeks;
-//                        break;
+                        start2 = cityIndeks;
+                        break;
                     }
                 } else if(sourceCity.nama.equals("D")) {
                         travelingTime += (3600*9/70);
@@ -162,36 +162,36 @@ public class Tour {
                 travelingTime +=  (3600*6/40);
             }
             
-//            for (int cityIndeks = start2+1; cityIndeks < tourSize(); cityIndeks++) {
-//                destinationCity = getCity(cityIndeks);
-//                if (sourceCity.nama.equals("D")) {
-//                    if (destinationCity.nama.equals("G")) {
-//                        travelingTime += (3600*9/70);
-//                    } else if (destinationCity.nama.equals("E")) {
-//                        travelingTime += (3600*4/120);
-//                    } else {
-//                        travelingTime += 0;
-//                    }
-//                } else if (sourceCity.nama.equals("E")) {
-//                    if (destinationCity.nama.equals("G")) {
-//                        travelingTime += (3600*9/70);
-//                    } else if (destinationCity.nama.equals("D")) {
-//                        travelingTime += (3600*4/120);
-//                    } else if (destinationCity.nama.equals("F")) {
-//                        travelingTime += (3600*4/70);
-//                    } else {
-//                        travelingTime += 0;
-//                    }
-//                } else if (sourceCity.nama.equals("F")) {
-//                    if (destinationCity.nama.equals("G")) {
-//                        travelingTime += (3600*9/70);
-//                    } else if (destinationCity.nama.equals("E")) {
-//                        travelingTime += (3600*4/120);
-//                    } else {
-//                        travelingTime += 0;
-//                    }
-//                }
-//            }
+            for (int cityIndeks = start2+1; cityIndeks < tourSize(); cityIndeks++) {
+                destinationCity = getCity(cityIndeks);
+                if (sourceCity.nama.equals("D")) {
+                    if (destinationCity.nama.equals("G")) {
+                        travelingTime += (3600*9/70);
+                    } else if (destinationCity.nama.equals("E")) {
+                        travelingTime += (3600*4/120);
+                    } else {
+                        travelingTime += 0;
+                    }
+                } else if (sourceCity.nama.equals("E")) {
+                    if (destinationCity.nama.equals("G")) {
+                        travelingTime += (3600*9/70);
+                    } else if (destinationCity.nama.equals("D")) {
+                        travelingTime += (3600*4/120);
+                    } else if (destinationCity.nama.equals("F")) {
+                        travelingTime += (3600*4/70);
+                    } else {
+                        travelingTime += 0;
+                    }
+                } else if (sourceCity.nama.equals("F")) {
+                    if (destinationCity.nama.equals("G")) {
+                        travelingTime += (3600*9/70);
+                    } else if (destinationCity.nama.equals("E")) {
+                        travelingTime += (3600*4/120);
+                    } else {
+                        travelingTime += 0;
+                    }
+                }
+            }
             distance = travelingTime;
         }
         return distance;
