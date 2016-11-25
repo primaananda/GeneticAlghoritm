@@ -17,7 +17,7 @@ import java.util.Collections;
 public class Tour {
     private ArrayList tour = new ArrayList<NodeCity>();
     private double fitness = 0;
-    private int distance = 0;
+    private double distance = 0;
 
     public Tour() {
         for (int i = 0; i< ManageTour.numberOfCities(); i++) {
@@ -53,15 +53,50 @@ public class Tour {
         return fitness;
     }
     
+    public int tourSize() {
+        return tour.size();
+    }
+    
     public double getDistance(){
         if (distance == 0) {
             int tourDistance = 0;
+            NodeCity sourceCity = getCity(0);
+            NodeCity destinationCity;
+            double travelingTime = 0;
+            int start = 0;
+            
+            //berfungsi untuk menghitung nilai dari node s menuju ke a, s menuju ke b dan s menuju ke c
             for (int cityIndeks = 0; cityIndeks < tourSize(); cityIndeks++) {
-                NodeCity city = getCity(cityIndeks);
-                NodeCity desNodeCity;
+                sourceCity = getCity(cityIndeks);
+                if (sourceCity.nama.equals("A")) {
+                    travelingTime += (3600*6/90);
+                    start = cityIndeks;
+                    break;
+                } else if (sourceCity.nama.equals("B")) {
+                    travelingTime += (3600*14/70);
+                    start = cityIndeks;
+                    break;
+                }
                 
                 
             }
+            distance = travelingTime;
         }
+        return distance;
     }
+    
+    public boolean containsCity(NodeCity city) {
+        return tour.contains(city);
+    }
+
+    @Override
+    public String toString() {
+        String string = " ";
+        for (int i = 0; i < tourSize(); i++) {
+            string += getCity(i)+" ";
+        }
+        return string;
+    }
+    
+    
 }
