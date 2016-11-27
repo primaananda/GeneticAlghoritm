@@ -16,7 +16,7 @@ public class NodeCity {
     String nama;
 
 
-    public NodeCity(String nama, int x, int y) {
+    public NodeCity(int x, int y, String nama) {
         this.nama = nama;
         this.nodex = x;
         this.nodey = y;
